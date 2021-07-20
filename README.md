@@ -45,7 +45,7 @@ Here, we are passing the value of parameter desc in the request header, this wil
      
 Deploy to azure:
 
-Set your subscriptio in az-cli using the below command:
+Set your subscription in az-cli using the below command:
 
       az account set --subscription "My Demos"
       
