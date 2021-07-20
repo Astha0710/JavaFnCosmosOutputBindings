@@ -53,6 +53,11 @@ Deploy to azure using the below command:
 
       mvn azure-functions:deploy
       
+Once the application is deployed, add the below setting under the Configuration -> Application settings section of your function app from azure portal
+
+Name=AzureCosmosDBConnection and Value=AccountEndpoint=https://yourcosmosdb.documents.azure.com:443/;AccountKey=Aabcd….
+
+      
 Browse to the app using the similar url for your app and pass any value under desc here we have passed "ResponseFromAzure":
 
      https://<Yourfunctionappname>.azurewebsites.net/api/WriteOneDocOutputBinding?desc=ResponseFromAzure
