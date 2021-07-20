@@ -3,13 +3,13 @@ Java Function App Using Http triggers and output bindings to send data to Cosmos
 Pre-requisites:
 
 In order to use these examples, you will need:
-	1. An active Azure Account (get a free trial account here).
-	2. Java SDK 1.8+ installed.
-	3. Maven.
-	4. Some knowledge of Java and Git.
-	5. Azure CLI installed.
-	6. Visual Studio Code to modify the source code to suit your own needs. VS Code is optional; you can use any supported IDE. If using Visual Studio Code, please ensure to install the Azure Functions extension.
-	7. An HTTP client, such as Postman for testing the GET and POST calls in HTTP-triggered functions.
+
+1. An active Azure Account.
+2. Java SDK 1.8+ installed.
+3. Maven.
+5. Azure CLI installed.
+6. Visual Studio Code to modify the source code to suit your own needs. VS Code is optional; you can use any supported IDE. If using Visual Studio Code, please ensure to install the Azure Functions extension.
+7. An HTTP client, such as Postman for testing the GET and POST calls in HTTP-triggered functions.
 
 Parameters to be modified/added in order to connect to ComosDB:
 
