@@ -67,13 +67,12 @@ Browse to the app using the similar url for your app and pass any value under de
 In the pom.xml file modify the following:
 
 Provide the name of your pre-created function app here: https://github.com/Astha0710/JavaFnCosmosOutputBindings/blob/cf6a3899f1e19572f31e2e914f5ac1eff23d28ba/pom.xml#L17
-<functionAppName>NameOfYourApplication</functionAppName>
+
 
 Provide the name of the resource group in which your app is created here https://github.com/Astha0710/JavaFnCosmosOutputBindings/blob/cf6a3899f1e19572f31e2e914f5ac1eff23d28ba/pom.xml#L63
-<resourceGroup>NameOfYourResourceGroupName</resourceGroup>
 
 Provide the name of the App Service Plan containing your app here: https://github.com/Astha0710/JavaFnCosmosOutputBindings/blob/cf6a3899f1e19572f31e2e914f5ac1eff23d28ba/pom.xml#L65
-<appServicePlanName>NameOfYourAppServicePlan</appServicePlanName>
+
 
 Provide the Region in which your application is created in here: https://github.com/Astha0710/JavaFnCosmosOutputBindings/blob/cf6a3899f1e19572f31e2e914f5ac1eff23d28ba/pom.xml#L68
 
@@ -81,4 +80,4 @@ Provide the OS that your application is using here: https://github.com/Astha0710
 
 You can also modify other parameters based on your requirement through the pom.xml file.
 
-Once all the changes are made, follow the Deploy to azure steps https://github.com/Astha0710/JavaFnCosmosOutputBindings/edit/master/README.md#L46
+Once all the changes are made, follow the Deploy to azure steps as given above.
