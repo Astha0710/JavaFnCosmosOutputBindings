@@ -41,3 +41,18 @@ Once your functions project is deployed, you can test if everything is working b
 Here, we are passing the value of parameter desc in the request header, this will be sent along with the randomly generated ID to the CosmosDB in the JSON document format.
      
      http://localhost:7071/api/WriteOneDocOutputBinding?desc=NewEntry
+     
+     
+Deploy to azure:
+
+Set your subscriptio in az-cli using the below command:
+
+      az account set --subscription "My Demos"
+      
+Deploy to azure using the below command:
+
+      mvn azure-functions:deploy
+      
+Browse to the app using the similar url for your app and pass any value under desc here we have passed "ResponseFromAzure":
+
+     https://<Yourfunctionappname>.azurewebsites.net/api/WriteOneDocOutputBinding?desc=ResponseFromAzure
