@@ -13,15 +13,19 @@ In order to use these examples, you will need:
 
 Parameters to be modified/added in order to connect to ComosDB:
 
-	• Fetch the value of connections string from the "Keys" under your cosmosdb resource from the azure portal. This string would be something like this: 
-"AccountEndpoint=https://yourcosmosdb.documents.azure.com:443/;AccountKey=Aabcd….;"
+Fetch the value of connections string from the "Keys" under your cosmosdb resource from the azure portal. This string would be something like this: 
+     
+     "AccountEndpoint=https://yourcosmosdb.documents.azure.com:443/;AccountKey=Aabcd….;"
 
-	• Add the above fetched CosmosDB connection String to your local.settings.json file under the field "AzureCosmosDBConnection". It would be defined as-
+Add the above fetched CosmosDB connection String to your local.settings.json file under the field "AzureCosmosDBConnection". It would be defined as-
 
-"AzureCosmosDBConnection":"AccountEndpoint=https://yourcosmosdb.documents.azure.com:443/;AccountKey=Aabcd….;"
+      "AzureCosmosDBConnection":"AccountEndpoint=https://yourcosmosdb.documents.azure.com:443/;AccountKey=Aabcd….;"
 
-	• You also need to provide the values of  parameters  <a href="https://github.com/Astha0710/JavaFnCosmosOutputBindings/blob/80f6c0afe952af2af8d6b0d443dd699fad0d476f/src/main/java/com/function/Function.java#L33">here</a>
-	name="any name",  databaseName: "cosmosdb name", collectionName: " name of container in your db"
+You also need to provide the values of name,databaseName, collectionName here      
+             
+https://github.com/Astha0710/JavaFnCosmosOutputBindings/blob/8c382564aa592427a039c9bc7f4211926c0d5647/src/main/java/com/function/Function.java#L33
+
+name="any name",  databaseName: "cosmosdb name", collectionName: " name of container in your db"
 
 
 Build and run the code locally:
@@ -36,5 +40,4 @@ Once your functions project is deployed, you can test if everything is working b
 
 Here, we are passing the value of parameter desc in the request header, this will be sent along with the randomly generated ID to the CosmosDB in the JSON document format.
      
-     http://localhost:7071/api/WriteOneDocOutputBinding?desc=NewEntry![image](https://user-images.githubusercontent.com/43231180/126320344-3da03210-97c6-4bdd-99ca-ad99e34f40a0.png)
-
+     http://localhost:7071/api/WriteOneDocOutputBinding?desc=NewEntry
